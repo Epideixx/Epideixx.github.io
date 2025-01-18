@@ -565,6 +565,9 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px 25px;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
 }
 
  .hobbies-title { margin-bottom: 20px; }
