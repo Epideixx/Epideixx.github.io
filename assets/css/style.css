@@ -561,26 +561,20 @@ main {
 
  .hobbies { margin-bottom: 30px; }
 
+ .hobbies-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
  .hobbies-title { margin-bottom: 20px; }
  
  .hobbies-content-box { text-align: center; }
 
- .hobbies-list {
-   display: flex;
-   justify-content: flex-start;
-   align-items: flex-start;
-   gap: 15px;
-   margin: 0 -15px;
-   padding: 25px 15px;
-   padding-bottom: 35px;
-   overflow-x: auto;
-   scroll-behavior: smooth;
-   overscroll-behavior-inline: contain;
-   scroll-snap-type: inline mandatory;
- }
-
  .hobbies-icon-box { margin-bottom: 10px; }
  
+ .hobbies-item-title { margin-bottom: 7px; }
+
  .hobbies-item {
    min-width: 100%;
    scroll-snap-align: center;
