@@ -842,7 +842,10 @@ main {
 }
 
 .companies-item img {
-  width: 100%;
+  max-width: 150px; /* Adjust the max-width as needed */
+  max-height: 100px; /* Adjust the max-height as needed */
+  display: block;
+  margin: 0 auto;
   filter: grayscale(1);
   transition: var(--transition-1);
 }
