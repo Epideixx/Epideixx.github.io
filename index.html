@@ -442,42 +442,45 @@
         -->
 
         <section class="companies">
-
           <h3 class="h3 companies-title">Companies</h3>
-
           <ul class="companies-list has-scrollbar">
-
             <li class="companies-item">
-              <a href="#">
-                <img src="./assets/images/logo-company-neurolab.png" alt="client logo">
+              <a href="#" class="company-link" data-company-title="Montreal Neurological Institute" data-company-description="Motivated by my interest in neuroscience, I worked as a research trainee in the Montreal Neurological Institute at Mcgill, in Montreal (Canada), for 6 months. I had the chance to work with Jason Da Silva and to be supervised by Sylvain Baillet. During this time, I discovered so many things in neuroscience, especially in MEG signals and frequency bands. I have used my data science skills to analyze data from twins' brains, to conduct research on the heritability of brain-fingerprint.">
+                <img src="./assets/images/logo-company-neurolab.png" alt="Neurolab Logo">
               </a>
             </li>
-
             <li class="companies-item">
-              <a href="#">
-                <img src="./assets/images/logo-company-koolab.jpeg" alt="client logo">
+              <a href="#" class="company-link" data-company-title="Koolab Global Tech Solutions" data-company-description="Koolab was my first entrance in the professional world, and I wanted to work in R&D in an very small start-up in AI, to touch everything and to learn a lot. I worked at Koolab in Barcelona (Spain) for 6 months, and I had the chance to work on several projects, from invoice detection to stock market forecasting. I have learned a lot about the actual implementation of AI in the industry in comparison to the theoretical way.">
+                <img src="./assets/images/logo-company-koolab.png" alt="Koolab Logo">
               </a>
             </li>
-
             <li class="companies-item">
-              <a href="#">
-                <img src="./assets/images/logo-company-centralesupelec.png" alt="client logo">
+              <a href="#" class="company-link" data-company-title="National University of Singapore" data-company-description="During my Master's at NUS, I had the opportunity to work as a Teaching Assistant for the module 'Information Retrieval' during a semester. I was in charge of tutoring students, grading assignments, and creating pipelines for automatic grading. I have learned a lot about the pedagogical aspect of teaching, and I have improved my communication skills. As a fun fact, my knowledge on this subject was not that good before, and that's why I accepted the challenge. As we say, teaching is the best way to learn!">
+                <img src="./assets/images/logo-company-nus.png" alt="NUS">
               </a>
             </li>
-
             <li class="companies-item">
-              <a href="#">
-                <img src="./assets/images/logo-company-nus.png" alt="client logo">
+              <a href="#" class="company-link" data-company-title="CentraleSupelec" data-company-description="During summer 2020, I have worked for a month with the department in charge of the logistics, as an intern in engineering. After discovering their needs, I created an easy-to-use tool for the employees to manage all their knowledge and protocols. I created a local Wiki-based website, with a search engine, and a user-friendly interface.">
+                <img src="./assets/images/logo-company-centralesupelec.png" alt="CentraleSupelec">
               </a>
             </li>
-
           </ul>
-
         </section>
-
-      </article>
-
-
+        
+        <!-- Modal for Companies -->
+        <div class="modal-container" data-company-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="company-modal">
+              <button class="modal-close-btn" data-company-modal-close-btn>
+                  <ion-icon name="close-outline"></ion-icon>
+              </button>
+              <div class="modal-content">
+                  <h4 class="modal-title" data-company-modal-title></h4>
+                  <p data-company-modal-text></p>
+              </div>
+          </section>
+      </div>
+            
 
 
 

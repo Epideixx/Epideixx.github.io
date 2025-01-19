@@ -157,3 +157,31 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// Companies modal variables
+const companyLinks = document.querySelectorAll(".company-link");
+const companyModalContainer = document.querySelector("[data-company-modal-container]");
+const companyModalCloseBtn = document.querySelector("[data-company-modal-close-btn]");
+const companyModalOverlay = document.querySelector("[data-overlay]");
+const companyModalTitle = document.querySelector("[data-company-modal-title]");
+const companyModalText = document.querySelector("[data-company-modal-text]");
+
+// Function to toggle the company modal
+const toggleCompanyModal = () => {
+  companyModalContainer.classList.toggle("active");
+  companyModalOverlay.classList.toggle("active");
+};
+
+// Add click event to each company logo
+companyLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    companyModalTitle.textContent = link.dataset.companyTitle;
+    companyModalText.textContent = link.dataset.companyDescription;
+    toggleCompanyModal();
+  });
+});
+
+// Close modal on button or overlay click
+companyModalCloseBtn.addEventListener("click", toggleCompanyModal);
+companyModalOverlay.addEventListener("click", toggleCompanyModal);

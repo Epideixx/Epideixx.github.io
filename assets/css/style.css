@@ -816,16 +816,58 @@ main {
 
 
 /**
-* #clients 
+* #companies 
 */
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-title {
+  font-size: 2rem; /* Adjust the size as needed */
+  color: white;    /* Makes the text white */
+  text-align: center; /* Optional: Centers the title */
+  margin-bottom: 1rem; /* Optional: Adds space below the title */
+}
+
+.modal-content {
+  background-color: hsl(45deg 11.42% 59.67% / 16%);
+  margin: 0% auto;
+  padding: 20px;
+  width: 90%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 .companies { margin-bottom: 15px; }
 
 .companies-list {
   display: flex;
   justify-content: flex-start;
+  gap: 50px;
   align-items: flex-start;
-  gap: 15px;
+  gap: 5px;
   margin: 0 -15px;
   padding: 25px;
   padding-bottom: 25px;
@@ -842,15 +884,29 @@ main {
 }
 
 .companies-item img {
-  max-width: 150px; /* Adjust the max-width as needed */
-  max-height: 100px; /* Adjust the max-height as needed */
+  max-width: 300px; /* Adjust the max-width as needed */
+  max-height: 150px; /* Adjust the max-height as needed */
   display: block;
-  margin: 0 auto;
+  margin: auto auto;
   filter: grayscale(1);
   transition: var(--transition-1);
 }
 
 .companies-item img:hover { filter: grayscale(0); }
+
+.company-modal {
+  background: var(--eerie-black-2);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-3);
+  text-align: center;
+}
+
+.modal-container.active .company-modal {
+  transform: scale(1);
+  opacity: 1;
+}
+
 
 /*-----------------------------------*\
   #RESUME
